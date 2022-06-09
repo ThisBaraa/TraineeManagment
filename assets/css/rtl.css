@@ -429,7 +429,7 @@ body.layout-3 .main-footer {
 
 .section .section-title::before {
     float: left;
-    margin-left: 15px;
+    margin-left: 0px;
     margin-right: 0;
 }
 
