@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes" name="viewport">
+    <title>الصفحة الرئيسية</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+
+<body class="layout-2">
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <img class="navbar-brand sidebar-gone-hide" src="../assets/img/logo.png">
+                <a font-family="Almarai" href="index.html" class="navbar-brand sidebar-gone-hide">نظام ادارة المتدربين</a>
+                <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+                <div class="nav-collapse">
+                    <a class="sidebar-gone-show nav-collapse-toggle nav-link" href="#">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+                <form class="form-inline ml-auto">
+                    <ul class="navbar-nav">
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </form>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                            <div class="dropdown-header">الاشعارات
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread">
+                                    <div class="dropdown-item-icon bg-primary text-white">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-success text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
+                                        <div class="time">12 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-danger text-white">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Low disk space. Let's clean it!
+                                        <div class="time">17 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Welcome to Stisla template!
+                                        <div class="time">Yesterday</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">مرحبًا، البراء اسماعيل بخاري</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> الملف الشخصي
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> الاعدادات
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> تسجيل الخروج
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-sidebar">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand sidebar-gone-show"><a href="index.html">ادارة المتدربين</a></div>
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">لوحة التحكم</li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>الصفحة الرئيسية</span></a>
+                        </li>
+                        <li class="menu-header">المتدربين</li>
+                        <li class="nav-item">
+                            <a href="trainee-manage.html" class="nav-link"><i class="fas fa-users"></i> <span>ادارة المتدربين</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-plus"></i> <span>اضافة متدرب</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-th"></i> <span>متابعة المتدربين</span></a>
+                        </li>
+                        <li class="menu-header">المشرفين</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-id-card"></i> <span>قائمة المشرفين</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user-plus"></i> <span>اضافة مشرف</span></a>
+                        </li>
+                        <li class="menu-header">اخرى</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-bug"></i> <span>التبليغ عن خطأ</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-envelope"></i> <span>الدعم الفني</span></a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>نظرة عامة</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card card-statistic-1">
+                                <div class="card-icon bg-primary">
+                                    <i class="far fa-user"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>عدد المشرفين</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card card-statistic-1">
+                                <div class="card-icon bg-danger">
+                                    <i class="far fa-newspaper"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>عدد المتدربين</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        42
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card card-statistic-1">
+                                <div class="card-icon bg-warning">
+                                    <i class="far fa-file"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>عدد متردبيني</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        1,201
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card card-statistic-1">
+                                <div class="card-icon bg-success">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>المتدربين الحاضرين</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        47
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" dir="rtl">
+                    <div class="section-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2 class="section-title" dir="rtl">سجل آخر الحضور</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped" id="table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">
+                                                            #
+                                                        </th>
+                                                        <th>الرقم الوظيفي</th>
+                                                        <th>ااسم المتدرب</th>
+                                                        <th>رقم الجوال</th>
+                                                        <th>العملية</th>
+                                                        <th>الوقت</th>
+                                                        <th>اخرى</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>1113282816</td>
+                                                        <td>البراء اسماعيل بخاري</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-success">حضور</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>1113784987</td>
+                                                        <td>محمد احمد الياسر</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-danger">انصراف</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>113283816</td>
+                                                        <td>ايمن مساعد الدوسري</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-success">حضور</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>113283816</td>
+                                                        <td>ايمن زكي لفلني</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-danger">انصراف</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            5
+                                                        </td>
+                                                        <td>113283816</td>
+                                                        <td>اسعد عمر قلي</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-danger">انصراف</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            6
+                                                        </td>
+                                                        <td>113283816</td>
+                                                        <td>فؤاد نكش طرطشلي</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-success">حضور</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            7
+                                                        </td>
+                                                        <td>113283816</td>
+                                                        <td>لؤي زكي سومطرة</td>
+                                                        <td>0532441144</td>
+                                                        <td>
+                                                            <div class="badge badge-danger">انصراف</div>
+                                                        </td>
+                                                        <td> 2022-06-09 8:30PM </td>
+                                                        <td><a href="#" class="btn btn-secondary">معاينة</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <!--
+            ////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////// F    O    T   E   R ///////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
+            -->
+
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2022
+                    <div class="bullet"></div> Made with ❤️ by <a href="https://bio.link/baraa" target="_blank">Baraa</a>
+                </div>
+                <div class="footer-right">
+                    Beta v1.0
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#table-1').DataTable();
+        });
+    </script>
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../assets/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../node_modules/sticky-kit/dist/sticky-kit.min.js"></script>
+    <script src="../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+    <!-- Page Specific JS File -->
+    <script src="../assets/js/page/modules-datatables.js"></script>
+
+    <!-- Template JS File -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
