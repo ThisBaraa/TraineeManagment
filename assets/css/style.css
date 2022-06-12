@@ -3573,8 +3573,6 @@ pre {
     margin-top: -10px;
     border-radius: 0;
     border-top: 1px solid #f9f9f9;
-    padding-left: 35px;
-    padding-right: 35px;
 }
 
 @media (max-width: 575.98px) {
@@ -4298,8 +4296,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     }
     body.layout-2 .main-wrapper,
     body.layout-3 .main-wrapper {
-        width: 100%;
-        padding: 0;
+        width: calc(100vh - 40px);
+        padding: 0px;
         display: block;
     }
     .main-content {
